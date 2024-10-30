@@ -1,0 +1,53 @@
+.payment-table {
+    width: 100%;
+    border-collapse: collapse; /* Quitar espacios entre las celdas */
+    margin-top: 20px;
+}
+
+.payment-table th,
+.payment-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd; /* Bordes de la tabla */
+}
+
+.payment-table th {
+    background-color: #07767c;
+    color: white;
+}
+
+.payment-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Color de filas alternas */
+}
+
+.payment-table tr:hover {
+    background-color: #e1e1e1; /* Color al pasar el cursor */
+}
+
+.refund-btn,
+.dispute-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px; /* Espaciado entre botones */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.refund-btn {
+    background-color: #f44336; /* Rojo */
+    color: white;
+}
+
+.refund-btn:hover {
+    background-color: #e53935; /* Rojo más oscuro */
+}
+
+.dispute-btn {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+}
+
+.dispute-btn:hover {
+    background-color: #45a049; /* Verde más oscuro */
+}

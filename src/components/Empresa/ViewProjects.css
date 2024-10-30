@@ -1,0 +1,104 @@
+.view-projects-content {
+    width: 1200px;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 20px;
+    min-height: auto; /* Esto asegura que el contenedor crezca de acuerdo a su contenido */
+    height: auto; /* El contenedor se ajustará a la cantidad de proyectos */
+    background-color: #f7f7f7;
+}
+
+.view-projects-content h1 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.project-card {
+    background-color: #f8f9fc;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 30px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.project-card:hover {
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #07373f;
+}
+
+.project-card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #5a5a5a;
+}
+
+.project-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-actions button {
+    background-color: #07767c;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-actions button:hover {
+    background-color: #055057;
+    transform: scale(1.05);
+}
+
+.project-actions .delete-btn {
+    background-color: #ff4c4c;
+}
+
+.project-actions .delete-btn:hover {
+    background-color: #ff1f1f;
+}
+
+.my-projects-content {
+    text-align: center;
+}
+
+.project-actions button i {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.project-actions .view-details-btn:hover {
+    background-color: #033a40;
+}
+
+.project-actions .delete-btn {
+    background-color: #ff4c4c;
+}
+
+.project-actions .delete-btn:hover {
+    background-color: #ff1f1f;
+}

@@ -1,0 +1,30 @@
+.publication-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.publication-card:hover {
+  background-color: #f0f8ff;
+}
+
+.selected {
+  border: 2px solid #007bff;
+  background-color: #e6f2ff;
+}
+
+.project-summary h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.project-company, .project-location, .project-salary, .project-time {
+  display: block;
+  font-size: 14px;
+  color: #666;
+}

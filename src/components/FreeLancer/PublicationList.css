@@ -1,0 +1,46 @@
+.background {
+  background-color: #b0d3d4;
+  /* background: linear-gradient(270deg, #b0d3d4, #77aeb1, #4e8b8f, #07767c); Degradado de verde agua claro a un verde más intenso */
+}
+
+.publication-container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Espacio entre la lista y los detalles */
+  padding: 20px;
+}
+
+.publication-list {
+  flex: 1; /* Se ajusta para ocupar el espacio disponible */;
+  max-height: 100%; /* Ajusta la altura máxima según tus necesidades */
+  overflow-y: auto; /* Muestra un scroll vertical si el contenido es mayor que la altura */
+  padding: 10px;
+}
+
+.publication-details {
+  flex: 1; /* Se ajusta para ocupar el espacio disponible */
+  max-height: 100%; /* Ajusta la altura máxima según tus necesidades */
+  overflow-y: auto; /* Muestra un scroll vertical si el contenido es mayor que la altura */
+  border: 1px solid #ddd; /* Opcional: un borde para delimitar los detalles */
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #ffffff; /* Color de fondo para distinguir la sección de detalles */
+}
+
+.project-details-card {
+  margin-top: 10px; /* Espaciado superior para el contenido del detalle */
+}
+
+
+@media (max-width: 768px) {
+  .publication-container {
+    flex-direction: column;
+  }
+
+  .publication-list,
+  .publication-details {
+    max-height: 300px; /* Ajusta la altura para pantallas más pequeñas */
+  }
+}
