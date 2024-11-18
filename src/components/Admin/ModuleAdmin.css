@@ -1,0 +1,76 @@
+.admin-home {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #eaf5f0; /* Color más claro para que los recuadros resalten */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+    border-radius: 10px;
+}
+
+.admin-home h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #07373f; /* Color principal */
+    font-family: 'Roboto', sans-serif; /* Fuente */
+}
+
+/* Estilos del módulo */
+.admin-module {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 900px; /* Ancho mayor */
+    margin: 0 auto;
+}
+
+/* Estilos para cada opción */
+.admin-option {
+    background: linear-gradient(135deg, #07767c, #055057);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.4s ease; /* Animación más suave */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borde sutil */
+}
+
+/* Animación al pasar el cursor */
+.admin-option:hover {
+    background: linear-gradient(135deg, #055057, #03393d); /* Cambia gradiente en hover */
+    transform: translateY(-5px); /* Levanta ligeramente */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); /* Aumenta la sombra */
+}
+
+/* Efecto adicional de brillo sutil en el borde al hacer hover */
+.admin-option:hover::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: rotate(45deg);
+    transition: all 0.4s ease;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .admin-module {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-home{
+        margin-top: 150px;
+    }
+
+    .admin-option {
+        font-size: 18px; /* Tamaño de fuente reducido para pantallas pequeñas */
+        padding: 20px; /* Espaciado reducido */
+    }
+}

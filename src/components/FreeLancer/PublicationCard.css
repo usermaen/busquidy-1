@@ -1,0 +1,87 @@
+.publication-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.publication-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+}
+
+.selected {
+  border: 2px solid #007bff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.urgent-label {
+  color: #ff0000;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.featured-label {
+  color: #007bff;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.project-card-title {
+  font-size: 18px;
+  color: #333;
+  margin: 5px 0;
+}
+
+.project-card-company {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.project-card-details {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-card {
+  font-size: 12px;
+  color: #888;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-card-location,
+.project-card-salary,
+.project-card-time,
+.project-card-date {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .publication-card {
+    padding: 10px;
+  }
+
+  .project-card-title {
+    font-size: 16px;
+  }
+
+  .project-card-company,
+  .project-card-details,
+  .footer-card {
+    font-size: 12px;
+  }
+}

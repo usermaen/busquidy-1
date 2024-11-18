@@ -1,0 +1,55 @@
+.dashboard {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.dashboard h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #07373f; /* Color principal */
+}
+
+.dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajuste de columnas */
+    gap: 20px; /* Espaciado entre tarjetas */
+    margin-bottom: 30px; /* Espacio debajo de las estadísticas */
+}
+
+.stat-card {
+    background: linear-gradient(135deg, #07767c, #055057);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+.quick-access {
+    margin-top: 40px;
+}
+
+.quick-access h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.quick-access ul {
+    list-style-type: none; /* Quitar puntos de la lista */
+    padding: 0;
+}
+
+.quick-access li {
+    margin: 10px 0; /* Espacio entre los elementos de la lista */
+}
+
+.quick-access a {
+    color: #07767c;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.quick-access a:hover {
+    color: #055057; /* Color al pasar el cursor */
+}

@@ -1,0 +1,218 @@
+/* Sección de búsqueda */
+.search-section {
+  padding: 8px;
+  border-top: 1px solid #ddd;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f0f7f9;
+  text-align: left;
+  font-size: 14px; /* Reducir el tamaño de la fuente */
+}
+
+/* Contenedor de la barra de búsqueda */
+.search-bar-container {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Barra de búsqueda */
+.search-bar {
+  width: 600px; /* Reducir el ancho de la barra de búsqueda */
+  padding: 6px; /* Menos padding en la barra */
+  margin-top: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px; /* Tamaño de fuente más pequeño */
+}
+
+/* Botón de búsqueda */
+.search-button {
+  padding: 6px 10px; /* Botón más pequeño */
+  background-color: #07767c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: px;
+  font-size: 14px; /* Tamaño de fuente reducido */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.main-filters {
+  display: flex;
+  justify-content: center; /* Mantiene los elementos centrados */
+  align-items: center;
+  margin: 20px 0;
+  gap: 15px; /* Añade un poco más de espacio entre los elementos */
+}
+
+/* Estilos para los botones desplegables principales */
+.filter-main-button {
+  width: 160px;
+  padding: 10px; /* Un padding un poco mayor para hacer los botones más visibles */
+  font-size: 14px;
+  background-color: white; /* Fondo ligeramente gris */
+  color: #333; /* Color de texto oscuro */
+  border: 1px solid #ccc; /* Un borde más sutil */
+  border-radius: 8px; /* Bordes más redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  z-index: 1; /* Eleva el select sobre otros elementos */
+}
+
+/* Efectos al hacer foco (cuando el botón es seleccionado) */
+.filter-main-button:focus {
+  outline: none;
+  border-color: #07767c; /* Color del borde más visible al enfocar */
+}
+
+/* Desplegable de las opciones del select */
+.filter-main-button option {
+  background-color: #fff;
+  z-index: 1000; /* Asegura que las opciones sean visibles sobre otros elementos */
+}
+
+/* Si hay algún overflow en los contenedores, asegúrate que sea visible */
+.filters-container, .search-section {
+  overflow: visible;
+}
+
+/* Aplicación de sombra en dispositivos con pantallas táctiles */
+@media (hover: none) {
+.filter-main-button:hover {
+  box-shadow: none; /* Sin sombra en dispositivos táctiles */
+  transform: none; /* Sin elevación en dispositivos táctiles */
+}
+}
+
+.search-button:hover {
+  background-color: #055b63; /* Color más oscuro al hacer hover */
+  transform: translateY(-2px); /* Levanta ligeramente el botón al pasar el mouse */
+}
+
+.search-button:active {
+  transform: translateY(0); /* Botón vuelve a su posición al hacer click */
+}
+
+.filters-container {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Mostrar filtros al activar */
+.filters-container.show {
+  max-height: 600px;
+  opacity: 1;
+  padding: 15px 0;
+}
+
+/* Diseño de cuadrícula para filtros */
+.filter-grid {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 15px; /* Menos espacio entre los elementos */
+  margin-top: 8px;
+}
+
+/* Estilos de cada filtro */
+.filter-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* Dropdown reducido */
+.filter-dropdown {
+  font-size: 13px; /* Tamaño de texto más pequeño en los dropdowns */
+  height: 30px; /* Reducir altura de los dropdowns */
+}
+
+/* Slider container */
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* Sliders más pequeños */
+.slider {
+  width: 100%;
+  height: 4px; /* Reducir la altura del slider */
+}
+
+/* Botones de filtros (fila 3) */
+.filter-buttons {
+  grid-column: span 6;
+  text-align: center;
+}
+
+.apply-filters {
+  padding: 6px 15px; /* Botones más pequeños */
+  background-color: #07767c;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin: 3px;
+  cursor: pointer;
+  font-size: 14px; /* Tamaño de fuente reducido */
+}
+
+.apply-filters {
+  background-color: #07767c;
+}
+
+.apply-filters:hover {
+  background-color: #055b63; /* Cambia el color al hacer hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil al pasar el mouse */
+}
+
+.clear-filters {
+  padding: 6px 15px; /* Botones más pequeños */
+  background-color: #f0ad4e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin: 3px;
+  cursor: pointer;
+  font-size: 14px; /* Tamaño de fuente reducido */
+}
+
+.clear-filters {
+  background-color: #f0ad4e;
+}
+
+.clear-filters:hover {
+  background-color: #e09835; /* Color más oscuro al hacer hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil al pasar el mouse */
+}
+
+.toggle-filters-container {
+  display: flex;
+  justify-content: center;
+  margin-left: 550px; 
+}
+
+.toggle-filters {
+  background-color: transparent;
+  border: none;
+  color: #07767c;
+  cursor: pointer;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.toggle-filters:hover {
+  color: #055b63;
+  transform: scale(1.05); /* Agranda ligeramente el botón al hacer hover */
+}

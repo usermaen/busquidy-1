@@ -1,0 +1,73 @@
+.project-table {
+    width: 100%;
+    border-collapse: collapse; /* Quitar espacios entre las celdas */
+    margin-top: 20px;
+}
+
+.project-table th,
+.project-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd; /* Bordes de la tabla */
+}
+
+.project-table th {
+    background-color: #07767c;
+    color: white;
+}
+
+.project-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Color de filas alternas */
+}
+
+.project-table tr:hover {
+    background-color: #e1e1e1; /* Color al pasar el cursor */
+}
+
+.approve-btn,
+.reject-btn,
+.edit-btn,
+.delete-btn {
+    padding: 8px 12px;
+    margin: 0 5px; /* Espacio entre botones */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.approve-btn {
+    background-color: #4caf50; /* Verde */
+    color: white;
+}
+
+.approve-btn:hover {
+    background-color: #45a049; /* Verde más oscuro */
+}
+
+.reject-btn {
+    background-color: #f44336; /* Rojo */
+    color: white;
+}
+
+.reject-btn:hover {
+    background-color: #e53935; /* Rojo más oscuro */
+}
+
+.edit-btn {
+    background-color: #ff9800; /* Naranja */
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #fb8c00; /* Naranja más oscuro */
+}
+
+.delete-btn {
+    background-color: #9e9e9e; /* Gris */
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #757575; /* Gris más oscuro */
+}
